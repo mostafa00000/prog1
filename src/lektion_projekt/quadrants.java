@@ -10,7 +10,7 @@ public class quadrants {
     	 
     	 
     	 
-        int x = C
+        int x = input.nextInt();
         int y = input.nextInt();
        if (x<0 && y<0) {
     	   System.out.println(3);

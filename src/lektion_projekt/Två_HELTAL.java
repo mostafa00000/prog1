@@ -15,16 +15,19 @@ public class Två_HELTAL {
         
          if(x<y) {
         	 
-        	 System.out.println("min" + x);
+        	 System.out.println("min " + x);
         	
          }
          else if(y<x) {
         	 
-        	System.out.println("min" + y);
+        	System.out.println("min " + y);
         	
          }
          
-          
+         else {
+        	 
+        	 System.out.println("equal" );
+         }
       
 		
 		
