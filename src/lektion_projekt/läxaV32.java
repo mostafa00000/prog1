@@ -8,7 +8,7 @@ public class läxaV32 {
 
         Scanner input = new Scanner(System.in);
 
-         double intag = input.nextDouble();
+         double intag = input.nextDouble(); 
          	String in = input.nextLine();
          		String ord = input.nextLine();
          			char c = input.next().charAt(0);
