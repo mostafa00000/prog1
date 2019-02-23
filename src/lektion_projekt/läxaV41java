@@ -2,7 +2,7 @@ package lektion_projekt;
 
 import java.util.Scanner;
 
-public class läxaV32 {
+public class lÃ¤xaV32 {
 	
 	public static void main(String[] args) {
 
@@ -90,9 +90,9 @@ public class läxaV32 {
             case 'o':
             case 'u':
             case 'y':
-            case 'å':
-            case 'ä':
-            case 'ö':
+            case 'Ã¥':
+            case 'Ã¤':
+            case 'Ã¶':
             case ' ':
      nytt += word.charAt(i);
                 
