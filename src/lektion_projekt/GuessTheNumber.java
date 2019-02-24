@@ -13,6 +13,7 @@ public class GuessTheNumber {
 		 Random rand = new Random(); 
 		 int randomTal = rand.nextInt(1000);
 		 int Gissning = -1;
+		 int AnltalGissningar = 0;
 	
 	
 		 while (Gissning !=randomTal) {
@@ -24,20 +25,32 @@ public class GuessTheNumber {
 			 if (Gissning>randomTal) {
 				 
 				 System.out.println("För högt! försök igen");
+				 AnltalGissningar ++;
 			 }
 			 
 			 else if (Gissning<randomTal) {
 				 
 				 System.out.println("För lågt försök igen");
+				 AnltalGissningar ++;
 			 }
 			 
 			 else if (Gissning==randomTal) {
 				 
-				 System.out.println("EZ GAME EZ LIFE " +  randomTal );
+				 AnltalGissningar ++;
+				 System.out.println("EZ GAME EZ LIFE " + "talet:" + randomTal + " " + "antal gissingar:" + AnltalGissningar );
+				 
 				 
 				 
 			 }
+		
+			 else if (AnltalGissningar==5) {
+				 
+				 System.out.println("LMAO YOU TRASH " + "Talet:" + randomTal);
+			 }
+		 
 		 }
+		 
+		 
 		 
 		 
 		 
