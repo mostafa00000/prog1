@@ -11,7 +11,7 @@ public class GuessTheNumber {
 		
 		// genererar ett slumpmessigt  tal
 		 Random rand = new Random(); 
-		 int randomTal = rand.nextInt(1000);
+		 int randomTal = rand.nextInt(100);
 		 int Gissning = -1;
 		 int AnltalGissningar = 0;
 	
@@ -28,13 +28,13 @@ public class GuessTheNumber {
 				 AnltalGissningar ++;
 			 }
 			 
-			 else if (Gissning<randomTal) {
+			 if (Gissning<randomTal) {
 				 
 				 System.out.println("För lågt försök igen");
 				 AnltalGissningar ++;
 			 }
 			 
-			 else if (Gissning==randomTal) {
+			 if (Gissning==randomTal) {
 				 
 				 AnltalGissningar ++;
 				 System.out.println("EZ GAME EZ LIFE " + "talet:" + randomTal + " " + "antal gissingar:" + AnltalGissningar );
@@ -43,9 +43,12 @@ public class GuessTheNumber {
 				 
 			 }
 		
-			 else if (AnltalGissningar==5) {
+			 if (AnltalGissningar>5) {
 				 
-				 System.out.println("LMAO YOU TRASH " + "Talet:" + randomTal);
+				 System.out.println("LMAO YOU TRASH " + "Talet:" + randomTal + AnltalGissningar );
+				 
+				 
+				 break;
 			 }
 		 
 		 }
